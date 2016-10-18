@@ -5,8 +5,6 @@ from .models import Credentials
 
 import urllib, requests, datetime, pytz
 
-from django.core.urlresolvers import reverse
-
 import os
 # import logging
 # logger = logging.getLogger(__name__)
