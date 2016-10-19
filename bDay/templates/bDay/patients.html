@@ -1,0 +1,20 @@
+<h1>List of patients</h1>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Full Name</th>
+    <th>Birthday</th>
+    <th>Cell Phone</th>
+    <th>Email</th>
+  </tr>  
+  {% for patient in patients %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ patient.first_name }} {{patient.middle_name}} {{patient.last_name }}</td>
+    <td>{{ patient.date_of_birth }}</td>
+    <td>{{ patient.cell_phone }}</td>
+    <td>{{ patient.email }}</td>
+  <tr>  
+  {% endfor %}
+</table>
